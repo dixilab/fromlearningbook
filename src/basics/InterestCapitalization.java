@@ -32,8 +32,9 @@ arguments:
 2) percent r = 5
 3) years t = 15
 -----------
-compilation:
-java InterestCapitalization 100000 5 15
+compilation and run:
+javac src/basics/InterestCapitalization.java
+java -cp src basics.InterestCapitalization 100000 15 5
 -----------
 out:
 IC = 211700,00
