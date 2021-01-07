@@ -5,7 +5,7 @@ package basics;
  * Exercise 1.2.24.
  * Interest capitalization
  * 05.01.2021
- * version:1.0
+ * version:1.1
  * Dinar I. <idmaratovich@gmail.com>
  * -------------------------------------------------
  Thanks to the book
@@ -20,7 +20,8 @@ public class InterestCapitalization {
         double p = Double.parseDouble(args[0]); // dollars
         double r = Double.parseDouble(args[1]) / 100; // percent
         double t = Double.parseDouble(args[2]); // years
-        System.out.printf ("IC = %.2f %n" , ( p * Math.exp(r * t)));
+        double IC = p * Math.exp(r * t); // interest capitalization
+        System.out.printf ("IC = %.2f %n" , IC);
     }
 }
 

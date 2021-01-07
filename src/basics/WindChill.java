@@ -18,10 +18,10 @@ package basics;
 
 public class WindChill {
     public static void main(String[] args) {
-        double t = Double.parseDouble(args[0]); // t < 50
-        double v = Double.parseDouble(args[1]); // 3 < v < 120
-        System.out.print("Wind chill (US index) = ");
-        System.out.print(35.74 + 0.6215 * t + (0.4275 * t - 35.75) * Math.pow(v,0.16));
+        double t = Double.parseDouble(args[0]); // temperature (t) < 50
+        double v = Double.parseDouble(args[1]); // 3 < wind speed (v) < 120
+        double WC = 35.74 + 0.6215 * t + (0.4275 * t - 35.75) * Math.pow(v,0.16); //wind chill
+        System.out.print("Wind chill (US index) = " + WC);
     }
 }
 
